@@ -1,5 +1,9 @@
+.vscode
+
+#python
 __pycache__
 
 #pytest
 .coverage
 .pytest_cashe
+htmlcov
