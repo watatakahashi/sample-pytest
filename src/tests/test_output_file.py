@@ -8,7 +8,7 @@ import os
 TEST_DATA_DIR = 'src/tests/test_data'
 
 
-def test_fillna_class_出力ファイルが期待されているものと一致する(monkeypatch):
+def test_fillna_class_出力ファイルが期待されているものと一致する(monkeypatch, setup):
 
     # モック
     monkeypatch.setattr(const.const, 'INPUT_DIR', f'{TEST_DATA_DIR}/input')
@@ -27,7 +27,7 @@ def test_fillna_class_出力ファイルが期待されているものと一致�
     os.remove(f'{TEST_DATA_DIR}/output/user.csv')
 
 
-def test_fillna_class_出力ファイルが期待されているものと一致する_名前付きimportを使用した場合(monkeypatch):
+def test_fillna_class_出力ファイルが期待されているものと一致する_名前付きimportを使用した場合(monkeypatch, setup):
 
     # モック
     monkeypatch.setattr('module.output_file_named_import.INPUT_DIR', f'{TEST_DATA_DIR}/input')
