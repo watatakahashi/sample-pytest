@@ -12,4 +12,4 @@ def test_inc_数値を渡さない場合にTypeErrorとなる():
 
 
 def test_abs_inc_0より大きい場合は加算():
-    assert abs_inc(3) == 4
+    assert abs_inc(3) == 3
